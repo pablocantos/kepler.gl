@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build-workbench": "rm -rf dist-workbench && babel-node bin/build-workbench",
+    "build-workbench": "rm -rf dist-workbench && babel-node bin/build-workbench && rm dist-workbench/app.js",
     "start": "webpack-dev-server --config ./webpack/config.js --progress --hot --open",
     "start-local": "webpack-dev-server --env.es6 --progress --hot --open",
     "start-local-es5": "webpack-dev-server --env.local --progress --hot --open"
@@ -30,7 +30,6 @@
     "html-webpack-plugin": "^2.30.1",
     "progress-bar-webpack-plugin": "^1.9.3",
     "webpack": "^2.4.0",
-    "webpack-dev-server": "^2.4.0",
-    "webpack-stats-plugin": "^0.1.4"
+    "webpack-dev-server": "^2.4.0"
   }
 }
