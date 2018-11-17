@@ -24,15 +24,16 @@ import window from 'global/window';
 import AutoSizer from 'react-virtualized/dist/commonjs/AutoSizer';
 import {receivePostMessage} from './actions';
 
-import {replaceLoadDataModal} from './factories/map-config-modal';
-import {AddDataButtonFactory, ExportConfigModalFactory} from 'kepler.gl/components';
+import {AddDataButtonFactory, ExportConfigModalFactory, PanelHeaderFactory} from 'kepler.gl/components';
 
 import ExportConfigButtonFactory from './components/export-config-button';
 import CustomExportConfigModalFactory from './components/export-config-modal';
+import CustomPanelHeaderFactory from './components/panel-header';
 
 const KeplerGl = require('kepler.gl/components').injectComponents([
   [AddDataButtonFactory, ExportConfigButtonFactory],
-  [ExportConfigModalFactory, CustomExportConfigModalFactory]
+  [ExportConfigModalFactory, CustomExportConfigModalFactory],
+  [PanelHeaderFactory, CustomPanelHeaderFactory]
 ]);
 
 const MAPBOX_TOKEN = process.env.MapboxAccessToken; // eslint-disable-line

@@ -42,7 +42,6 @@ export function provideInitialState(initialState) {
   const coreReducer = coreReducerFactory(initialState);
 
   const handleRegisterEntry = (state, action) => {
-    console.log(action);
     const {payload: {id, mint, mapboxApiAccessToken}} = action;
     return {
       // register a new entry to voyager reducer
