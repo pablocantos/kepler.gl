@@ -8,7 +8,7 @@
   "dependencies": {
     "clipboard": "^2.0.4",
     "global": "^4.3.0",
-    "kepler.gl": "^0.2.0",
+    "kepler.gl": "^0.2.0-beta.0",
     "react": "^15.3.1",
     "react-dom": "^15.6.1",
     "react-modal": "^3.1.10",
